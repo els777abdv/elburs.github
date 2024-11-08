@@ -349,8 +349,8 @@ section h2 {
 
 
 #experience {
-    margin: 50px;
-    padding: 0 20px;
+    margin: 1px;
+    padding: 0 5px;
     font-family: Arial, sans-serif;
 }
 
@@ -744,6 +744,37 @@ section h2 {
     transition: width 0.3s ease;
   }
   
+#services {
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 20px;
+    gap: 20px;
+    flex-wrap: wrap; /* Добавляем обертку, чтобы карточки могли переноситься */
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    #services {
+        flex-direction: column; /* Переключаем карточки в вертикальный режим */
+        align-items: center; /* Центрируем карточки */
+    }
+
+    .card {
+        width: 90%; /* Занимает почти всю ширину экрана */
+        max-width: 300px; /* Ограничение максимальной ширины для красивого вида */
+        margin-bottom: 20px;
+    }
+}
 
   
 
